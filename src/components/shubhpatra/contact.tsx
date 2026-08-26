@@ -1,8 +1,9 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 
-import logo from "@/assets/shubhpatra-logo.jpg.asset.json";
 import { brand } from "@/data/products";
 import { whatsappLink } from "./enquiry";
+
+const logoSrc = "/assets/logo/shubhpatra-logo.jpg";
 import { BotanicalOrnament, GoldDivider, SectionHeading } from "./ornaments";
 
 export function Contact() {
@@ -65,7 +66,7 @@ export function SiteFooter() {
     <footer className="bg-green-night border-gold/25 border-t py-12">
       <div className="mx-auto max-w-7xl px-5 text-center lg:px-8">
         <img
-          src={logo.url}
+          src={logoSrc}
           alt={`${brand.name} crest`}
           width={64}
           height={64}

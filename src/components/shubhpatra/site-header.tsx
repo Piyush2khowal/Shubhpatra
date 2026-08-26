@@ -2,9 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import logo from "@/assets/shubhpatra-logo.jpg.asset.json";
 import { brand } from "@/data/products";
 import { whatsappLink } from "./enquiry";
+
+const logoSrc = "/assets/logo/shubhpatra-logo.jpg";
 
 const links = [
   { href: "/#top", label: "Home" },
@@ -44,7 +45,7 @@ export function SiteHeader() {
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 lg:px-8">
         <a href="#top" className="flex min-w-0 items-center gap-3">
           <img
-            src={logo.url}
+            src={logoSrc}
             alt={`${brand.name} crest`}
             width={48}
             height={48}

@@ -1,10 +1,11 @@
 import { ChevronDown } from "lucide-react";
 
 import heroImage from "@/assets/hero-invitation.jpg";
-import logo from "@/assets/shubhpatra-logo.jpg.asset.json";
 import { brand } from "@/data/products";
 import { whatsappLink } from "./enquiry";
 import { ArchFrame, BotanicalOrnament, GoldDivider } from "./ornaments";
+
+const logoSrc = "/assets/logo/shubhpatra-logo.jpg";
 
 export function Hero() {
   return (
@@ -19,7 +20,7 @@ export function Hero() {
       />
       <div className="relative mx-auto max-w-3xl px-5 text-center">
         <img
-          src={logo.url}
+          src={logoSrc}
           alt={`${brand.name} logo`}
           width={96}
           height={96}
