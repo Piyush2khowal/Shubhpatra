@@ -4,6 +4,8 @@ import { useState } from "react";
 import { CardsCatalogue } from "@/components/shubhpatra/cards-catalogue";
 import { Collections } from "@/components/shubhpatra/collections";
 import { Contact, SiteFooter } from "@/components/shubhpatra/contact";
+import { Faq } from "@/components/shubhpatra/faq";
+import { Highlights } from "@/components/shubhpatra/highlights";
 import { Hero } from "@/components/shubhpatra/hero";
 import { ProductModal } from "@/components/shubhpatra/product-modal";
 import { ProductSection } from "@/components/shubhpatra/product-section";
@@ -71,6 +73,8 @@ function Index() {
         />
         <VideoSection onPlay={setVideo} />
         <CardsCatalogue onOpen={setProduct} />
+        <Highlights />
+        <Faq />
         <Contact />
       </main>
       <SiteFooter />
