@@ -96,7 +96,7 @@ export const brand = {
   owner: "Mustaqim",
   whatsapp: "919958577919",
   phone: "+91 99585 77919",
-  email: "hello@shubhpatra.in",
+  email: "shubhpatra11@gmail.com",
   city: "Delhi",
   hours: "10 AM – 6 PM (Mon–Sat)",
   instagram: "https://instagram.com",
