@@ -14,35 +14,38 @@ export function Contact() {
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitting(true);
-    setError(null);
+  e.preventDefault();
+  setSubmitting(true);
+  setSuccess(false);
+  setError(null);
 
-    const formData = new FormData(e.currentTarget);
-    const data = new URLSearchParams();
-    for (const [key, value] of formData.entries()) {
-      data.append(key, value as string);
+  const form = e.currentTarget;
+  const formData = new FormData(form);
+
+  formData.append("access_key", "b7db5af4-ecfc-44c7-b0cd-7b3ec994a4b2");
+  formData.append("subject", "New SHUBHPATRA Enquiry");
+  formData.append("from_name", "SHUBHPATRA Website");
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setSuccess(true);
+      form.reset();
+    } else {
+      setError(result.message || "Something went wrong. Please try again.");
     }
-
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: data.toString(),
-      });
-
-      if (response.ok) {
-        setSuccess(true);
-        e.currentTarget.reset();
-      } else {
-        throw new Error("Form submission failed");
-      }
-    } catch (err) {
-      setError("Something went wrong. Please check your network and try again, or enquire directly via WhatsApp.");
-    } finally {
-      setSubmitting(false);
-    }
-  };
+  } catch {
+    setError("Unable to send enquiry. Please try again.");
+  } finally {
+    setSubmitting(false);
+  }
+};
 
   return (
     <section id="contact" className="bg-cream py-20 sm:py-28 border-t border-gold/20">
