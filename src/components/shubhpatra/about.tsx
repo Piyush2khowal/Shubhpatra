@@ -4,14 +4,13 @@ import { BotanicalOrnament, GoldDivider } from "./ornaments";
 import { useReveal } from "./use-reveal";
 
 export function About() {
-  const { ref, visible } = useReveal<HTMLDivElement>();
+  const { ref } = useReveal<HTMLDivElement>();
 
   return (
     <section id="about" className="bg-beige/50 py-20 sm:py-28">
       <div
         ref={ref}
-        data-visible={visible}
-        className="reveal mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8"
+        className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8"
       >
         <div className="border-gold/30 relative border p-3">
           <img

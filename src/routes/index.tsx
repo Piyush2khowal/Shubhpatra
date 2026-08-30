@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
+import { About } from "@/components/shubhpatra/about";
 import { CardsCatalogue } from "@/components/shubhpatra/cards-catalogue";
 import { Collections } from "@/components/shubhpatra/collections";
 import { Contact, SiteFooter } from "@/components/shubhpatra/contact";
@@ -45,6 +46,7 @@ function Index() {
       <main>
         <Hero />
         <Collections />
+        <About />
         <ProductSection
           id="digital"
           eyebrow="Digital Invitations"
