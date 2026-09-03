@@ -13,7 +13,7 @@ export interface CatalogueSection {
   subcategory: string;
 }
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 25;
 
 function slug(value?: string) {
   return (value ?? "")

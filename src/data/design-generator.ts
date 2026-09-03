@@ -3,7 +3,7 @@
  *
  * A handful of designs per subcategory are hand-authored in `products.ts`
  * with real copy — those are always shown first. This module tops each
- * subcategory up to the target count (48) with additional designs built
+ * subcategory up to the target count (25) with additional designs built
  * from small word-pools + the deterministic SVG generator, so every
  * catalogue reads as genuinely different pieces rather than repeated
  * placeholders, without shipping hundreds of image files.
@@ -16,7 +16,7 @@
 import { generateDesignSvg, designStyleForSeed } from "@/lib/design-svg";
 import type { BaseProduct, CardProduct, CategoryId } from "./products";
 
-export const TARGET_PER_SUBCATEGORY = 48;
+export const TARGET_PER_SUBCATEGORY = 25;
 
 const COLLECTIONS = [
   "Ivory Arch",
