@@ -21,6 +21,7 @@ import videoImg from "@/assets/cat-video.jpg";
 import physicalImg from "@/assets/cat-physical.jpg";
 import cardGreenImg from "@/assets/card-green.jpg";
 import heroImg from "@/assets/hero-invitation.jpg";
+import saveTheDateVideo from "@/assets/video_invitation/1_video.mp4";
 
 export type CategoryId = "digital" | "stationery" | "video" | "cards" | "logo";
 
@@ -614,8 +615,7 @@ export const videoInvitations: VideoProduct[] = [
     poster: cardGreenImg,
     duration: "0:20",
     orientation: "landscape",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    videoUrl: saveTheDateVideo,
     description:
       "A short, cinematic reveal of the date — ivory textures with maroon and soft gold typography.",
     details: ["20 seconds", "Reels-ready 9:16 version", "48-hour turnaround"],
