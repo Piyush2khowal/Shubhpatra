@@ -23,6 +23,13 @@ import cardGreenImg from "@/assets/card-green.jpg";
 import heroImg from "@/assets/hero-invitation.jpg";
 import saveTheDateVideo from "@/assets/video_invitation/1_video.mp4";
 
+//physical cards images
+import card01 from "@/assets/physical_cards/1_image.png";
+import card02 from "@/assets/physical_cards/2_image.png";
+import card03 from "@/assets/physical_cards/3_image.png";
+import card04 from "@/assets/physical_cards/4_image.png";
+import card05 from "@/assets/physical_cards/5_image.png";
+
 export type CategoryId = "digital" | "stationery" | "video" | "cards" | "logo";
 
 export interface BaseProduct {
@@ -832,7 +839,7 @@ export const physicalCards: CardProduct[] = [
     title: "Heritage Velvet Box Card",
     price: "₹450",
     priceValue: 450,
-    image: cardGreenImg,
+    image: card01,
     style: "Box Card",
     colour: "Maroon",
     material: "Velvet-wrapped rigid board with laser-cut lid",
@@ -858,7 +865,7 @@ export const physicalCards: CardProduct[] = [
     title: "Jaali Arch Laser-Cut Card",
     price: "₹280",
     priceValue: 280,
-    image: physicalImg,
+    image: card02,
     style: "Laser Cut",
     colour: "Ivory",
     material: "300 gsm ivory board, laser-cut jaali cover",
@@ -879,7 +886,7 @@ export const physicalCards: CardProduct[] = [
     title: "Ivory Hot-Foil Invitation",
     price: "₹210",
     priceValue: 210,
-    image: heroImg,
+    image: card03,
     style: "Foil Press",
     colour: "Ivory",
     material: "300 gsm handmade cotton paper, hot foil",
@@ -900,7 +907,7 @@ export const physicalCards: CardProduct[] = [
     title: "Silk Scroll Invitation",
     price: "₹520",
     priceValue: 520,
-    image: stationeryImg,
+    image: card04,
     style: "Scroll",
     colour: "Ivory",
     material: "Silk scroll, brass-capped cylinder",
@@ -921,7 +928,7 @@ export const physicalCards: CardProduct[] = [
     title: "Maroon Gatefold Card",
     price: "₹340",
     priceValue: 340,
-    image: cardGreenImg,
+    image: card05,
     style: "Gatefold",
     colour: "Maroon",
     material: "350 gsm board, foil-pressed pillars, magnet close",
