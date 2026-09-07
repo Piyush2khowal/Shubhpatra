@@ -17,7 +17,10 @@ export function ProductModal({
 }
 
 function ProductModalInner({ product, onClose }: { product: BaseProduct; onClose: () => void }) {
-  const images = [product.image, ...(product.gallery ?? [])];
+  const images =
+    product.images && product.images.length > 0
+      ? product.images
+      : [product.image, ...(product.gallery ?? [])].filter(Boolean);
   const [active, setActive] = useState(0);
   const features = product.features ?? product.details;
 
@@ -33,6 +36,17 @@ function ProductModalInner({ product, onClose }: { product: BaseProduct; onClose
       document.body.style.overflow = previous;
     };
   }, [onClose]);
+
+  const gridColsClass =
+    images.length === 5
+      ? "grid-cols-5"
+      : images.length === 4
+        ? "grid-cols-4"
+        : images.length === 3
+          ? "grid-cols-3"
+          : images.length === 2
+            ? "grid-cols-2"
+            : "grid-cols-5";
 
   return (
     <div
@@ -61,26 +75,31 @@ function ProductModalInner({ product, onClose }: { product: BaseProduct; onClose
           {/* Main image + thumbnail gallery */}
           <div className="bg-beige/40 p-4 sm:p-6">
             <img
-              src={images[active]}
+              src={images[active] ?? product.image}
               alt={product.title}
               className="h-64 w-full object-cover sm:h-96"
             />
             {images.length > 1 ? (
-              <div className="mt-3 flex flex-wrap gap-2">
-                {images.map((image, index) => (
-                  <button
-                    key={`${image}-${index}`}
-                    type="button"
-                    onClick={() => setActive(index)}
-                    aria-label={`View image ${index + 1}`}
-                    aria-current={active === index}
-                    className={`h-16 w-16 overflow-hidden border transition-colors ${
-                      active === index ? "border-brown" : "border-gold/40 hover:border-brown/60"
-                    }`}
-                  >
-                    <img src={image} alt="" className="h-full w-full object-cover" />
-                  </button>
-                ))}
+              <div className={`mt-3.5 grid gap-2 sm:gap-2.5 ${gridColsClass}`}>
+                {images.map((image, index) => {
+                  const isSelected = active === index;
+                  return (
+                    <button
+                      key={`${image}-${index}`}
+                      type="button"
+                      onClick={() => setActive(index)}
+                      aria-label={`View image ${index + 1}`}
+                      aria-current={isSelected}
+                      className={`relative aspect-square w-full overflow-hidden border-2 transition-all duration-200 cursor-pointer ${
+                        isSelected
+                          ? "border-brown ring-2 ring-brown/40 shadow-sm opacity-100 scale-[1.02]"
+                          : "border-gold/40 opacity-65 hover:border-brown/60 hover:opacity-100"
+                      }`}
+                    >
+                      <img src={image} alt="" className="h-full w-full object-cover" />
+                    </button>
+                  );
+                })}
               </div>
             ) : null}
           </div>

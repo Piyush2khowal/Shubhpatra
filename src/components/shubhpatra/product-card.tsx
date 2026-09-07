@@ -30,7 +30,7 @@ export function ProductCard({
         className="block w-full overflow-hidden text-left"
       >
         <img
-          src={product.image}
+          src={product.images?.[0] ?? product.image}
           alt={product.title}
           loading="lazy"
           width={1024}
