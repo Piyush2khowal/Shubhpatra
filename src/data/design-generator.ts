@@ -16,6 +16,12 @@
 import { generateDesignSvg, designStyleForSeed } from "@/lib/design-svg";
 import type { BaseProduct, CardProduct, CategoryId } from "./products";
 
+import digitalImg from "@/assets/cat-digital.jpg";
+import stationeryImg from "@/assets/cat-stationery.jpg";
+import physicalImg from "@/assets/cat-physical.jpg";
+import cardGreenImg from "@/assets/card-green.jpg";
+import heroImg from "@/assets/hero-invitation.jpg";
+
 export const TARGET_PER_SUBCATEGORY = 25;
 
 const COLLECTIONS = [
@@ -129,6 +135,7 @@ export function generateDesigns(opts: GenerateOptions): BaseProduct[] {
     const priceStep = 100 * (n % 9);
     const priceValue = basePrice + priceStep;
 
+    const mainImage = generateDesignSvg(id);
     const product: BaseProduct = {
       id,
       category,
@@ -138,7 +145,11 @@ export function generateDesigns(opts: GenerateOptions): BaseProduct[] {
       title: `${collection} ${subcategory} ${titleSuffix}`.replace(/\s+/g, " ").trim(),
       price: `From ₹${priceValue.toLocaleString("en-IN")}`,
       priceValue,
-      image: generateDesignSvg(id),
+      image: mainImage,
+      images:
+        category === "stationery"
+          ? [mainImage, stationeryImg, heroImg, physicalImg, cardGreenImg]
+          : [mainImage, digitalImg, heroImg, cardGreenImg, stationeryImg],
       description: `${opener} ${motifLabel}, in a ${layoutLabel}, ${closer}`,
       details: [
         `${layoutLabel[0]!.toUpperCase()}${layoutLabel.slice(1)} with ${motifLabel}`,
