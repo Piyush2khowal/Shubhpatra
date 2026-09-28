@@ -1,6 +1,6 @@
-import aboutImage1 from "@/assets/1st_image.png";
-import aboutImage2 from "@/assets/2nd_image.jpeg";
-import aboutImage3 from "@/assets/3rd_image.jpeg";
+import aboutImage1 from "@/assets/about_us/1st_image.png";
+import aboutImage2 from "@/assets/about_us/2nd_image.jpeg";
+import aboutImage3 from "@/assets/about_us/3rd_image.jpeg";
 
 import { BotanicalOrnament, GoldDivider } from "./ornaments";
 import { useReveal } from "./use-reveal";

@@ -15,13 +15,21 @@
 import { topUpSubcategory, TARGET_PER_SUBCATEGORY } from "./design-generator";
 import { generateDesignSvg } from "@/lib/design-svg";
 
-import digitalImg from "@/assets/cat-digital.jpg";
-import stationeryImg from "@/assets/cat-stationery.jpg";
-import videoImg from "@/assets/cat-video.jpg";
-import physicalImg from "@/assets/cat-physical.jpg";
-import cardGreenImg from "@/assets/card-green.jpg";
-import heroImg from "@/assets/hero-invitation.jpg";
+// Templates  
+
+import digitalImg from "@/assets/Templates/cat-digital.jpg";
+import stationeryImg from "@/assets/Templates/cat-stationery.jpg";
+import videoImg from "@/assets/Templates/cat-video.jpg";
+import physicalImg from "@/assets/Templates/cat-physical.jpg";
+import cardGreenImg from "@/assets/Templates/card-green.jpg";
+import heroImg from "@/assets/Templates/hero-invitation.jpg";
+
+
 import saveTheDateVideo from "@/assets/video_invitation/1_video.mp4";
+
+//Digital invites and Stationary images
+// card 1
+
 
 //physical cards images
 import card01 from "@/assets/physical_cards/1_image.png";
