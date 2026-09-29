@@ -16,11 +16,11 @@
 import { generateDesignSvg, designStyleForSeed } from "@/lib/design-svg";
 import type { BaseProduct, CardProduct, CategoryId } from "./products";
 
-import digitalImg from "@/assets/cat-digital.jpg";
-import stationeryImg from "@/assets/cat-stationery.jpg";
-import physicalImg from "@/assets/cat-physical.jpg";
-import cardGreenImg from "@/assets/card-green.jpg";
-import heroImg from "@/assets/hero-invitation.jpg";
+import digitalImg from "@/assets/Templates/cat-digital.jpg";
+import stationeryImg from "@/assets/Templates/cat-stationery.jpg";
+import physicalImg from "@/assets/Templates/cat-physical.jpg";
+import cardGreenImg from "@/assets/Templates/card-green.jpg";
+import heroImg from "@/assets/Templates/hero-invitation.jpg";
 
 export const TARGET_PER_SUBCATEGORY = 25;
 
@@ -78,7 +78,7 @@ const DESCRIPTION_OPENERS = [
 ];
 
 const DESCRIPTION_CLOSERS = [
-  "set in the SHUBHPATRA cream, beige and gold palette.",
+  "set in the TheShubhmilan cream, beige and gold palette.",
   "in warm cocoa and muted gold tones.",
   "with fine gold linework throughout.",
   "finished in ivory, taupe and espresso.",

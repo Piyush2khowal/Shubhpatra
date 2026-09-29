@@ -11,7 +11,7 @@ import {
   type BaseProduct,
 } from "@/data/products";
 
-const title = "Stationery — SHUBHPATRA";
+const title = "Stationery — TheShubhmilan";
 const description =
   "Signages, welcome notes, menus, itineraries, money envelopes, tags and wedding scrolls — browse every design by category.";
 

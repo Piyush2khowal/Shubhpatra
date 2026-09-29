@@ -4,10 +4,10 @@
  */
 
 export const about = {
-  eyebrow: "About SHUBHPATRA",
+  eyebrow: "About TheShubhmilan",
   title: "Invitations made the way heirlooms are",
   paragraphs: [
-    "SHUBHPATRA is a small studio of designers, illustrators and print craftspeople creating wedding invitations for Indian families — digital suites, invitation films, day-of stationery and printed cards.",
+    "TheShubhmilan is a small studio of designers, illustrators and print craftspeople creating wedding invitations for Indian families — digital suites, invitation films, day-of stationery and printed cards.",
     "Every design begins with a conversation about your ceremonies, your families and the feeling you want your guests to hold. We then draw it by hand — arches, jaali screens and fine botanical lines — in a warm, restrained palette of beige, cream and brown.",
   ],
   stats: [

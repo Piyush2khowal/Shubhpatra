@@ -11,7 +11,7 @@ import {
   type BaseProduct,
 } from "@/data/products";
 
-const title = "Digital Invitations — SHUBHPATRA";
+const title = "Digital Invitations — TheShubhmilan";
 const description =
   "Wedding invitation PDFs, path & pooja, kids celebrations and digital stationery — browse every design by category.";
 

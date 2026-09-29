@@ -20,7 +20,7 @@ import {
   type VideoProduct,
 } from "@/data/products";
 
-const title = "SHUBHPATRA — Premium Indian Wedding Invitations";
+const title = "TheShubhmilan — Premium Indian Wedding Invitations";
 const description =
   "Digital invitations, cinematic invitation films, day-of stationery and heirloom printed cards — crafted with temple arches, jaali screens and gold foil.";
 

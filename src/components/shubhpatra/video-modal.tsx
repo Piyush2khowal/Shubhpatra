@@ -21,7 +21,7 @@ export function VideoModal({
   video: VideoProduct | null;
   onClose: () => void;
 }) {
-  if (!video) return null;
+  if (!video || !video.videoUrl) return null;
   // Keyed so switching films remounts the player (fresh, reset state).
   return <VideoModalInner key={video.id} video={video} onClose={onClose} />;
 }

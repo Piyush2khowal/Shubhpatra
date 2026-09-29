@@ -25,10 +25,114 @@ import cardGreenImg from "@/assets/Templates/card-green.jpg";
 import heroImg from "@/assets/Templates/hero-invitation.jpg";
 
 
-import saveTheDateVideo from "@/assets/video_invitation/1_video.mp4";
+/* ------------------------------------------------------------------ */
+/* SAVE THE DATE IMAGES (STD1 – STD10)                                */
+/* How to add new designs in the future:                              */
+/* 1. Put the new folder in `src/assets/digital_invitations/save_the_date/STD11/` */
+/* 2. Include 4 images inside: STD11.png, STD11_1.png, STD11_2.png, STD11_3.jpg */
+/* 3. Import the 4 images below and add a new entry to `digitalInvitations` */
+/* ------------------------------------------------------------------ */
 
-//Digital invites and Stationary images
-// card 1
+// STD1
+import std1_1 from "@/assets/digital_invitations/save_the_date/STD1/STD1.png";
+import std1_2 from "@/assets/digital_invitations/save_the_date/STD1/STD1_1.png";
+import std1_3 from "@/assets/digital_invitations/save_the_date/STD1/STD1_2.png";
+import std1_4 from "@/assets/digital_invitations/save_the_date/STD1/STD1_3.jpg";
+
+// STD2
+import std2_1 from "@/assets/digital_invitations/save_the_date/STD2/STD2.png";
+import std2_2 from "@/assets/digital_invitations/save_the_date/STD2/STD2_1.png";
+import std2_3 from "@/assets/digital_invitations/save_the_date/STD2/STD2_2.png";
+import std2_4 from "@/assets/digital_invitations/save_the_date/STD2/STD2_3.jpg";
+
+// STD3
+import std3_1 from "@/assets/digital_invitations/save_the_date/STD3/STD3.png";
+import std3_2 from "@/assets/digital_invitations/save_the_date/STD3/STD3_1.png";
+import std3_3 from "@/assets/digital_invitations/save_the_date/STD3/STD3_2.png";
+import std3_4 from "@/assets/digital_invitations/save_the_date/STD3/STD3_3.jpg";
+
+// STD4
+import std4_1 from "@/assets/digital_invitations/save_the_date/STD4/STD4.png";
+import std4_2 from "@/assets/digital_invitations/save_the_date/STD4/STD4_1.png";
+import std4_3 from "@/assets/digital_invitations/save_the_date/STD4/STD4_2.png";
+import std4_4 from "@/assets/digital_invitations/save_the_date/STD4/STD4_3.jpg";
+
+// STD5
+import std5_1 from "@/assets/digital_invitations/save_the_date/STD5/STD5.png";
+import std5_2 from "@/assets/digital_invitations/save_the_date/STD5/STD5_1.png";
+import std5_3 from "@/assets/digital_invitations/save_the_date/STD5/STD5_2.png";
+import std5_4 from "@/assets/digital_invitations/save_the_date/STD5/STD5_3.jpg";
+
+// STD6
+import std6_1 from "@/assets/digital_invitations/save_the_date/STD6/STD6.png";
+import std6_2 from "@/assets/digital_invitations/save_the_date/STD6/STD6_1.png";
+import std6_3 from "@/assets/digital_invitations/save_the_date/STD6/STD6_2.png";
+import std6_4 from "@/assets/digital_invitations/save_the_date/STD6/STD6_3.jpg";
+
+// STD7
+import std7_1 from "@/assets/digital_invitations/save_the_date/STD7/STD7.png";
+import std7_2 from "@/assets/digital_invitations/save_the_date/STD7/STD7_1.png";
+import std7_3 from "@/assets/digital_invitations/save_the_date/STD7/STD7_2.png";
+import std7_4 from "@/assets/digital_invitations/save_the_date/STD7/STD7_3.jpg";
+
+// STD8
+import std8_1 from "@/assets/digital_invitations/save_the_date/STD8/STD8.png";
+import std8_2 from "@/assets/digital_invitations/save_the_date/STD8/STD8_1.png";
+import std8_3 from "@/assets/digital_invitations/save_the_date/STD8/STD8_2.png";
+import std8_4 from "@/assets/digital_invitations/save_the_date/STD8/STD8_3.jpg";
+
+// STD9
+import std9_1 from "@/assets/digital_invitations/save_the_date/STD9/STD9.png";
+import std9_2 from "@/assets/digital_invitations/save_the_date/STD9/STD9_1.png";
+import std9_3 from "@/assets/digital_invitations/save_the_date/STD9/STD9_2.png";
+import std9_4 from "@/assets/digital_invitations/save_the_date/STD9/STD9_3.jpg";
+
+// STD10
+import std10_1 from "@/assets/digital_invitations/save_the_date/STD10/STD10.png";
+import std10_2 from "@/assets/digital_invitations/save_the_date/STD10/STD10_1.png";
+import std10_3 from "@/assets/digital_invitations/save_the_date/STD10/STD10_2.png";
+import std10_4 from "@/assets/digital_invitations/save_the_date/STD10/STD10_3.jpg";
+
+/* ------------------------------------------------------------------ */
+/* VIDEO INVITATIONS ASSETS                                           */
+/* VI_1 to VI_10 connected. VI_11 and VI_12 empty until files arrive. */
+/* ------------------------------------------------------------------ */
+
+
+// VI_1
+import vi1Video from "@/assets/video_invitation/VI_1.mp4";
+
+// VI_2
+import vi2Video from "@/assets/video_invitation/VI_2.mp4";
+
+// VI_3
+import vi3Video from "@/assets/video_invitation/VI_3.mp4";
+
+// VI_4
+import vi4Video from "@/assets/video_invitation/VI_4.MP4";
+
+// VI_5
+import vi5Video from "@/assets/video_invitation/VI_5.mp4";
+
+// VI_6
+import vi6Video from "@/assets/video_invitation/VI_6.mp4";
+
+// VI_7
+import vi7Video from "@/assets/video_invitation/VI_7.mp4";
+
+// VI_8
+import vi8Video from "@/assets/video_invitation/VI_8.mp4";
+
+// VI_9
+import vi9Video from "@/assets/video_invitation/VI_9.mp4";
+
+// VI_10
+import vi10Video from "@/assets/video_invitation/VI_10.mp4";
+
+// VI_11 — EMPTY (add import when client provides VI_11.mp4)
+// VI_12 — EMPTY (add import when client provides VI_12.mp4)
+
+// Digital invites and Stationary images
 
 
 //physical cards images
@@ -109,7 +213,7 @@ export const defaultCustomization =
   "Names, dates, ceremonies, languages, colours and motifs are fully customisable. Share your details on WhatsApp and we send a personalised proof.";
 
 export const brand = {
-  name: "SHUBHPATRA",
+  name: "TheShubhmilan",
   tagline: "Wedding invites & stationery",
   owner: "Mustaqim",
   whatsapp: "919958577919",
@@ -229,19 +333,270 @@ export const digitalCatalogueGroups = digitalGroups.filter((g) => g.group !== "V
  * Placeholder imagery is used until the client shares the final artwork.
  */
 export const digitalInvitations: BaseProduct[] = [
+  // =================================================================
+  // SAVE THE DATE (10 DESIGNS: STD1 – STD10)
+  // Each design folder contains 4 gallery images of the SAME design.
+  // The first image is the primary catalogue cover.
+  // To add STD11 in the future, copy one block below and increment the number.
+  // =================================================================
+
+  // STD1
   {
     id: "dig-save-the-date",
     category: "digital",
     group: "Wedding Invitation PDF",
     subcategory: "Save the Date",
     collection: "Ivory Arch",
-    title: "Save The Date Invitation PDF",
+    title: "Save The Date Invitation PDF — Design 1",
     price: "From ₹1,299",
     priceValue: 1299,
-    image: digitalImg,
-    images: [digitalImg, heroImg, cardGreenImg, stationeryImg, physicalImg],
+    image: std1_1,
+    images: [std1_1, std1_2, std1_3, std1_4],
     description:
-      "A single-page save the date PDF with an ivory arch, maroon script and fine botanical borders.",
+      "A graceful single-page save the date PDF featuring an elegant arch motif and delicate ceremonial typography.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD2
+  {
+    id: "dig-save-the-date-2",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Marigold Trail",
+    title: "Save The Date Invitation PDF — Design 2",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std2_1,
+    images: [std2_1, std2_2, std2_3, std2_4],
+    description:
+      "Warm festive palette with rich floral borders and clean, modern typesetting for your date announcement.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD3
+  {
+    id: "dig-save-the-date-3",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Gold Filigree",
+    title: "Save The Date Invitation PDF — Design 3",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std3_1,
+    images: [std3_1, std3_2, std3_3, std3_4],
+    description:
+      "Opulent gold filigree borders paired with regal calligraphy on warm ivory cardstock.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD4
+  {
+    id: "dig-save-the-date-4",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Jaali Screen",
+    title: "Save The Date Invitation PDF — Design 4",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std4_1,
+    images: [std4_1, std4_2, std4_3, std4_4],
+    description:
+      "Intricate architectural jaali patterns framing your celebration date in ceremonial splendor.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD5
+  {
+    id: "dig-save-the-date-5",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Botanical Line",
+    title: "Save The Date Invitation PDF — Design 5",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std5_1,
+    images: [std5_1, std5_2, std5_3, std5_4],
+    description:
+      "Hand-sketched botanical sprigs and minimal gold detailing for an understated, modern romance.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD6
+  {
+    id: "dig-save-the-date-6",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Maroon Zari",
+    title: "Save The Date Invitation PDF — Design 6",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std6_1,
+    images: [std6_1, std6_2, std6_3, std6_4],
+    description:
+      "Rich deep maroon accents with traditional zari weave styling and royal serif typography.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD7
+  {
+    id: "dig-save-the-date-7",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Sandstone Minimal",
+    title: "Save The Date Invitation PDF — Design 7",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std7_1,
+    images: [std7_1, std7_2, std7_3, std7_4],
+    description:
+      "Earthy sandstone undertones, crisp serif titles and plenty of breathable whitespace.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD8
+  {
+    id: "dig-save-the-date-8",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Peacock Motif",
+    title: "Save The Date Invitation PDF — Design 8",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std8_1,
+    images: [std8_1, std8_2, std8_3, std8_4],
+    description:
+      "Regal peacock feather line illustration surrounded by gentle gold shimmer and classic borders.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD9
+  {
+    id: "dig-save-the-date-9",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Lotus Bloom",
+    title: "Save The Date Invitation PDF — Design 9",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std9_1,
+    images: [std9_1, std9_2, std9_3, std9_4],
+    description:
+      "Serene sacred lotus blooms on fine cream texture with soft gold calligraphy.",
+    details: [
+      "1 designed page, print + share ready PDF",
+      "Custom names, date and hashtag",
+      "Matching WhatsApp status crop",
+      "2 revision rounds included",
+    ],
+    specs: [
+      { label: "Format", value: "PDF + JPG" },
+      { label: "Pages", value: "1" },
+      { label: "Turnaround", value: "2–3 working days" },
+    ],
+  },
+
+  // STD10
+  {
+    id: "dig-save-the-date-10",
+    category: "digital",
+    group: "Wedding Invitation PDF",
+    subcategory: "Save the Date",
+    collection: "Rangoli Dawn",
+    title: "Save The Date Invitation PDF — Design 10",
+    price: "From ₹1,299",
+    priceValue: 1299,
+    image: std10_1,
+    images: [std10_1, std10_2, std10_3, std10_4],
+    description:
+      "Intricate mandalas and geometric rangoli corners announcing the big day in timeless style.",
     details: [
       "1 designed page, print + share ready PDF",
       "Custom names, date and hashtag",
@@ -641,198 +996,258 @@ export const stationery: BaseProduct[] = [
 ];
 
 /* ------------------------------------------------------------------ */
-/* 3. VIDEO INVITATIONS (a Digital Invite subcategory)                 */
+/* 3. VIDEO INVITATIONS                                               */
+/* VI_1 to VI_10 use the actual uploaded MP4 video files.             */
+/* VI_11 and VI_12 are reserved empty slots until client files arrive.*/
 /* ------------------------------------------------------------------ */
 
-/** Subcategories: "Save the Date", "Wedding", "Ring Ceremony / Engagement". */
+// VIDEO INVITATIONS
+// VI_1
+// VI_2
+// VI_3
+// VI_4
+// VI_5
+// VI_6
+// VI_7
+// VI_8
+// VI_9
+// VI_10
+// VI_11 — EMPTY
+// VI_12 — EMPTY
+
 export const videoInvitations: VideoProduct[] = [
+  // VI_1
   {
-    id: "vid-save-the-date-film",
+    id: "vid-vi-1",
     category: "video",
     group: "Video Invite",
     subcategory: "Save the Date",
     collection: "Save the Date",
-    title: "Save The Date Teaser Film",
+    title: "Save The Date Teaser Film (VI 1)",
     price: "From ₹4,200",
     priceValue: 4200,
     image: cardGreenImg,
     poster: cardGreenImg,
     duration: "0:20",
-    orientation: "landscape",
-    videoUrl: saveTheDateVideo,
+    orientation: "portrait",
+    videoUrl: vi1Video,
     description:
       "A short, cinematic reveal of the date — ivory textures with maroon and soft gold typography.",
-    details: ["20 seconds", "Reels-ready 9:16 version", "48-hour turnaround"],
+    details: ["Cinematic teaser", "Reels-ready 9:16 version", "48-hour turnaround"],
   },
+
+  // VI_2
   {
-    id: "vid-wedding-arch",
+    id: "vid-vi-2",
     category: "video",
     group: "Video Invite",
     subcategory: "Wedding",
     collection: "Wedding",
-    title: "Wedding Invitation Film",
+    title: "Wedding Invitation Film (VI 2)",
     price: "From ₹6,500",
     priceValue: 6500,
     image: videoImg,
     poster: videoImg,
     duration: "0:45",
-    orientation: "landscape",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    orientation: "portrait",
+    videoUrl: vi2Video,
     description:
       "An illuminated arch opens onto your names, with diyas, florals and a live instrumental score.",
-    details: [
-      "45–60 seconds, 1080p",
-      "Original score",
-      "Vertical + horizontal delivery",
-      "3 revision rounds",
-    ],
+    details: ["Full celebration suite", "Original score", "3 revision rounds"],
   },
+
+  // VI_3
   {
-    id: "vid-ring-ceremony",
+    id: "vid-vi-3",
     category: "video",
     group: "Video Invite",
     subcategory: "Ring Ceremony / Engagement",
     collection: "Ring Ceremony",
-    title: "Ring Ceremony Invitation Film",
+    title: "Ring Ceremony Invitation Film (VI 3)",
     price: "From ₹5,400",
     priceValue: 5400,
     image: heroImg,
     poster: heroImg,
     duration: "0:35",
     orientation: "portrait",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    videoUrl: vi3Video,
     description:
       "A vertical engagement film built for WhatsApp and Instagram, with ring motif animation.",
     details: ["Vertical 9:16 master", "Ring motif animation", "Voice-over option"],
   },
+
+  // VI_4
   {
-    id: "vid-haldi-glow",
+    id: "vid-vi-4",
     category: "video",
     group: "Video Invite",
     subcategory: "Save the Date",
     collection: "Haldi Glow",
-    title: "Haldi Ceremony Teaser Film",
+    title: "Haldi Ceremony Teaser Film (VI 4)",
     price: "From ₹3,800",
     priceValue: 3800,
-    image: generateDesignSvg("vid-haldi-glow-poster"),
-    poster: generateDesignSvg("vid-haldi-glow-poster"),
+    image: generateDesignSvg("vid-vi-4-poster"),
+    poster: generateDesignSvg("vid-vi-4-poster"),
     duration: "0:18",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    orientation: "portrait",
+    videoUrl: vi4Video,
     description: "A sunlit, marigold-toned teaser announcing the haldi, built for Instagram.",
-    details: ["18 seconds", "Square 1:1 master", "48-hour turnaround"],
+    details: ["18 seconds", "Vertical 9:16 master", "48-hour turnaround"],
   },
+
+  // VI_5
   {
-    id: "vid-mehendi-motion",
+    id: "vid-vi-5",
     category: "video",
     group: "Video Invite",
     subcategory: "Wedding",
     collection: "Mehendi Motion",
-    title: "Mehendi Invitation Film",
+    title: "Mehendi Invitation Film (VI 5)",
     price: "From ₹4,600",
     priceValue: 4600,
-    image: generateDesignSvg("vid-mehendi-motion-poster"),
-    poster: generateDesignSvg("vid-mehendi-motion-poster"),
+    image: generateDesignSvg("vid-vi-5-poster"),
+    poster: generateDesignSvg("vid-vi-5-poster"),
     duration: "0:30",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    orientation: "portrait",
+    videoUrl: vi5Video,
     description: "Hand-drawn henna line art animates across a warm cream and gold backdrop.",
-    details: ["30 seconds", "Square 1:1 master", "2 revision rounds"],
+    details: ["30 seconds", "Vertical 9:16 master", "2 revision rounds"],
   },
+
+  // VI_6
   {
-    id: "vid-sangeet-reveal",
+    id: "vid-vi-6",
     category: "video",
     group: "Video Invite",
     subcategory: "Wedding",
     collection: "Sangeet Reveal",
-    title: "Sangeet Night Invitation Film",
+    title: "Sangeet Night Invitation Film (VI 6)",
     price: "From ₹5,200",
     priceValue: 5200,
-    image: generateDesignSvg("vid-sangeet-reveal-poster"),
-    poster: generateDesignSvg("vid-sangeet-reveal-poster"),
+    image: generateDesignSvg("vid-vi-6-poster"),
+    poster: generateDesignSvg("vid-vi-6-poster"),
     duration: "0:32",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    orientation: "portrait",
+    videoUrl: vi6Video,
     description: "A festive gold-foil reveal announcing the sangeet, scored with live percussion.",
-    details: ["32 seconds", "Square 1:1 master", "Original score"],
+    details: ["32 seconds", "Vertical 9:16 master", "Original score"],
   },
+
+  // VI_7
   {
-    id: "vid-reception-arch",
+    id: "vid-vi-7",
     category: "video",
     group: "Video Invite",
     subcategory: "Wedding",
     collection: "Reception Arch",
-    title: "Reception Invitation Film",
+    title: "Reception Invitation Film (VI 7)",
     price: "From ₹5,800",
     priceValue: 5800,
-    image: generateDesignSvg("vid-reception-arch-poster"),
-    poster: generateDesignSvg("vid-reception-arch-poster"),
+    image: generateDesignSvg("vid-vi-7-poster"),
+    poster: generateDesignSvg("vid-vi-7-poster"),
     duration: "0:40",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    orientation: "portrait",
+    videoUrl: vi7Video,
     description:
       "A grand illuminated arch parts to reveal the reception details, in gold and ivory.",
-    details: ["40 seconds", "Square 1:1 master", "3 revision rounds"],
+    details: ["40 seconds", "Vertical 9:16 master", "3 revision rounds"],
   },
+
+  // VI_8
   {
-    id: "vid-ring-motion",
+    id: "vid-vi-8",
     category: "video",
     group: "Video Invite",
     subcategory: "Ring Ceremony / Engagement",
     collection: "Ring Motion",
-    title: "Ring Ceremony Teaser Film",
+    title: "Ring Ceremony Teaser Film (VI 8)",
     price: "From ₹4,900",
     priceValue: 4900,
-    image: generateDesignSvg("vid-ring-motion-poster"),
-    poster: generateDesignSvg("vid-ring-motion-poster"),
+    image: generateDesignSvg("vid-vi-8-poster"),
+    poster: generateDesignSvg("vid-vi-8-poster"),
     duration: "0:24",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    orientation: "portrait",
+    videoUrl: vi8Video,
     description: "Two rings interlock in gold linework over a soft beige gradient.",
-    details: ["24 seconds", "Square 1:1 master", "Voice-over option"],
+    details: ["24 seconds", "Vertical 9:16 master", "Voice-over option"],
   },
+
+  // VI_9
   {
-    id: "vid-save-date-bloom",
+    id: "vid-vi-9",
     category: "video",
     group: "Video Invite",
     subcategory: "Save the Date",
     collection: "Lotus Bloom",
-    title: "Save The Date Bloom Film",
+    title: "Save The Date Bloom Film (VI 9)",
     price: "From ₹4,000",
     priceValue: 4000,
-    image: generateDesignSvg("vid-save-date-bloom-poster"),
-    poster: generateDesignSvg("vid-save-date-bloom-poster"),
+    image: generateDesignSvg("vid-vi-9-poster"),
+    poster: generateDesignSvg("vid-vi-9-poster"),
     duration: "0:22",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    orientation: "portrait",
+    videoUrl: vi9Video,
     description: "A lotus motif blooms open around the date, in cream, taupe and muted gold.",
-    details: ["22 seconds", "Square 1:1 master", "48-hour turnaround"],
+    details: ["22 seconds", "Vertical 9:16 master", "48-hour turnaround"],
   },
+
+  // VI_10
   {
-    id: "vid-baby-shower-bloom",
+    id: "vid-vi-10",
     category: "video",
     group: "Video Invite",
     subcategory: "Wedding",
     collection: "Baby Bloom",
-    title: "Baby Shower Invitation Film",
+    title: "Baby Shower Invitation Film (VI 10)",
     price: "From ₹3,600",
     priceValue: 3600,
-    image: generateDesignSvg("vid-baby-shower-bloom-poster"),
-    poster: generateDesignSvg("vid-baby-shower-bloom-poster"),
+    image: generateDesignSvg("vid-vi-10-poster"),
+    poster: generateDesignSvg("vid-vi-10-poster"),
     duration: "0:20",
-    orientation: "square",
-    videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    orientation: "portrait",
+    videoUrl: vi10Video,
     description: "A soft floral wreath frames the godh bharai details in ivory and gold.",
-    details: ["20 seconds", "Square 1:1 master", "2 revision rounds"],
+    details: ["20 seconds", "Vertical 9:16 master", "2 revision rounds"],
+  },
+
+  // VI_11 — EMPTY
+  // Client has not provided this video yet. Remains empty until actual file is provided.
+  {
+    id: "vid-vi-11",
+    category: "video",
+    group: "Video Invite",
+    subcategory: "Wedding",
+    collection: "Upcoming Suite",
+    title: "Video Invitation 11",
+    price: "From ₹4,500",
+    priceValue: 4500,
+    image: generateDesignSvg("vid-vi-11-poster"),
+    poster: generateDesignSvg("vid-vi-11-poster"),
+    duration: "",
+    orientation: "portrait",
+    videoUrl: "", // EMPTY: connect imported VI_11.mp4 when received
+    description: "New cinematic video invitation coming soon.",
+    details: ["High-definition master", "Custom music score", "Coming soon"],
+  },
+
+  // VI_12 — EMPTY
+  // Client has not provided this video yet. Remains empty until actual file is provided.
+  {
+    id: "vid-vi-12",
+    category: "video",
+    group: "Video Invite",
+    subcategory: "Wedding",
+    collection: "Upcoming Suite",
+    title: "Video Invitation 12",
+    price: "From ₹4,500",
+    priceValue: 4500,
+    image: generateDesignSvg("vid-vi-12-poster"),
+    poster: generateDesignSvg("vid-vi-12-poster"),
+    duration: "",
+    orientation: "portrait",
+    videoUrl: "", // EMPTY: connect imported VI_12.mp4 when received
+    description: "New cinematic video invitation coming soon.",
+    details: ["High-definition master", "Custom music score", "Coming soon"],
   },
 ];
 
@@ -1458,6 +1873,13 @@ function digitalBasePrice(subcategory: string): number {
 
 /** Full, unique design set for one Digital Invite subcategory (curated + generated). */
 export function digitalSubcategoryDesigns(group: string, subcategory: string): BaseProduct[] {
+  // Save the Date uses exclusively the actual client designs (STD1–STD10)
+  if (subcategory === "Save the Date") {
+    return digitalInvitations.filter(
+      (p) => p.subcategory === "Save the Date" && (!group || p.group === group),
+    );
+  }
+
   return topUpSubcategory(digitalInvitations, {
     category: "digital",
     group,

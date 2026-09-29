@@ -43,8 +43,10 @@ export function VideoSection({ onPlay }: { onPlay: (video: VideoProduct) => void
               {/* 1:1 square thumbnail on every breakpoint */}
               <button
                 type="button"
-                onClick={() => onPlay(video)}
-                aria-label={`Play ${video.title}`}
+                onClick={() => {
+                  if (video.videoUrl) onPlay(video);
+                }}
+                aria-label={video.videoUrl ? `Play ${video.title}` : `${video.title} (Coming Soon)`}
                 className="group border-gold/35 hover:border-gold/70 relative block aspect-square w-full overflow-hidden border bg-card transition-colors"
               >
                 <img
@@ -53,9 +55,15 @@ export function VideoSection({ onPlay }: { onPlay: (video: VideoProduct) => void
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <span className="border-gold/80 bg-cream/70 text-brown absolute top-1/2 left-1/2 grid h-14 w-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border backdrop-blur transition-transform duration-500 group-hover:scale-110">
-                  <Play className="ml-0.5 h-4 w-4 fill-current" />
-                </span>
+                {video.videoUrl ? (
+                  <span className="border-gold/80 bg-cream/70 text-brown absolute top-1/2 left-1/2 grid h-14 w-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border backdrop-blur transition-transform duration-500 group-hover:scale-110">
+                    <Play className="ml-0.5 h-4 w-4 fill-current" />
+                  </span>
+                ) : (
+                  <span className="border-gold/40 bg-cream/85 text-brown/70 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border px-2.5 py-1 text-[0.6rem] tracking-[0.2em] uppercase backdrop-blur">
+                    Coming Soon
+                  </span>
+                )}
                 {video.duration ? (
                   <span className="bg-cream/85 text-brown border-gold/40 absolute right-2 bottom-2 border px-2 py-0.5 text-[0.6rem] tracking-[0.2em]">
                     {video.duration}

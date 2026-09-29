@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/shubhpatra/ornaments";
 import { SiteHeader } from "@/components/shubhpatra/site-header";
 import { physicalCards, type BaseProduct } from "@/data/products";
 
-const title = "Physical Cards — SHUBHPATRA";
+const title = "Physical Cards — TheShubhmilan";
 const description =
   "Printed invitation cards — velvet boxes, laser-cut jaali, hot foil and scrolls — browse our complete 25-design catalogue.";
 
