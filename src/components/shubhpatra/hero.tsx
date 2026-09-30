@@ -1,6 +1,6 @@
 import { ChevronDown } from "lucide-react";
 
-import heroImage from "@/assets/hero-invitation.jpg";
+import heroImage from "@/assets/Templates/hero-invitation.jpg";
 import { brand } from "@/data/products";
 import { whatsappLink } from "./enquiry";
 import { ArchFrame, BotanicalOrnament, GoldDivider } from "./ornaments";
